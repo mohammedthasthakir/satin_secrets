@@ -1,4 +1,4 @@
-import { createHashRouter } from 'react-router'
+import { createHashRouter, Link } from 'react-router'
 
 // Layouts
 import UserLayout from '../layouts/UserLayout'
@@ -37,9 +37,9 @@ function NotFound() {
       <p className="font-serif text-8xl font-bold text-muted-foreground/20">404</p>
       <h1 className="font-serif text-2xl font-bold text-foreground mt-4 mb-2">Page Not Found</h1>
       <p className="text-muted-foreground text-sm mb-8">The page you&rsquo;re looking for doesn&rsquo;t exist.</p>
-      <a href="/" className="bg-primary text-primary-foreground px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors">
+      <Link to="/" className="bg-primary text-primary-foreground px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors">
         Back to Home
-      </a>
+      </Link>
     </div>
   )
 }

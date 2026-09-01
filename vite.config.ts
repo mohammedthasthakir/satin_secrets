@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'node:path'
 
 export default defineConfig({
-  base: '/satin_secrets/',
+  base: '/',
 
   plugins: [
     react(),

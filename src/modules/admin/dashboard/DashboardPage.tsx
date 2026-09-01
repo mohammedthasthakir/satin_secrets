@@ -1,4 +1,5 @@
 import { products } from '../../../data/products'
+import { Link } from 'react-router'
 import { formatPrice } from '../../../utils/format'
 import { StatusBadge } from '../../../components/ui/Badge'
 
@@ -131,7 +132,7 @@ export default function DashboardPage() {
         <div className="bg-card rounded-2xl shadow-sm overflow-hidden">
           <div className="flex items-center justify-between px-5 py-4 border-b border-border">
             <h3 className="font-semibold text-foreground">Recent Orders</h3>
-            <a href="/admin/orders" className="text-xs text-accent hover:underline">View all</a>
+            <Link to="/admin/orders" className="text-xs text-accent hover:underline">View all</Link>
           </div>
           <div className="divide-y divide-border">
             {RECENT_ORDERS.map(order => (
@@ -153,7 +154,7 @@ export default function DashboardPage() {
         <div className="bg-card rounded-2xl shadow-sm overflow-hidden">
           <div className="flex items-center justify-between px-5 py-4 border-b border-border">
             <h3 className="font-semibold text-foreground">Top Products</h3>
-            <a href="/admin/products" className="text-xs text-accent hover:underline">View all</a>
+            <Link to="/admin/products" className="text-xs text-accent hover:underline">View all</Link>
           </div>
           <div className="divide-y divide-border">
             {TOP_PRODUCTS.map((p, i) => (
