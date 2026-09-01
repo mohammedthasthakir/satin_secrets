@@ -95,26 +95,26 @@ export default function LoginPage() {
             </button>
           </form>
 
-          <div className="mt-4 flex flex-col gap-3">
+          {/* <div className="mt-4 flex flex-col gap-3">
             <button
               onClick={handleDemoLogin}
               className="w-full border-2 border-border text-foreground py-3 rounded-full font-semibold hover:border-primary transition-colors text-sm"
             >
               Try Demo Account
             </button>
-          </div>
+          </div> */}
 
           <p className="text-center text-sm text-muted-foreground mt-6">
             Don&rsquo;t have an account?{' '}
             <Link to="/register" className="text-primary font-semibold hover:underline">Create one</Link>
           </p>
 
-          <div className="mt-4 pt-4 border-t border-border">
+          {/* <div className="mt-4 pt-4 border-t border-border">
             <p className="text-center text-xs text-muted-foreground">
               Admin?{' '}
               <Link to="/admin/login" className="text-accent hover:underline">Admin Login</Link>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
