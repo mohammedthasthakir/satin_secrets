@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router'
+import { createHashRouter } from 'react-router'
 
 // Layouts
 import UserLayout from '../layouts/UserLayout'
@@ -44,7 +44,7 @@ function NotFound() {
   )
 }
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   // ── User Portal ──────────────────────────────────────────────
   {
     path: '/',
@@ -106,4 +106,6 @@ export const router = createBrowserRouter([
       { path: 'settings', Component: AdminSettingsPage },
     ],
   },
-])
+], {
+  basename: import.meta.env.BASE_URL,
+})
